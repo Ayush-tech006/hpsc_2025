@@ -1,4 +1,9 @@
-def sqrt2(x, debug):
+def sqrt2(x, debug=False):
+    from numpy import nan
+    if x==0:
+        return 0
+    elif x<0:
+        return nan
     s= 1.5	
     kmax= 15
     tolerance= 1.0e-14;
